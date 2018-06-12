@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "From Foreigner to Fluent: Why I Chose to Become a Software Engineer "
-date:       2018-06-12 19:19:12 +0000
+date:       2018-06-12 15:19:13 -0400
 permalink:  from_foreigner_to_fluent_why_i_chose_to_become_a_software_engineer
 ---
 
