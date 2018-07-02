@@ -6,8 +6,6 @@ permalink:  booleans_are_they_actually_scary_procedural_ruby
 ---
 
 
-![](https://giphy.com/gifs/atejfh29pJPtC/html5)
-
 Procedural Ruby has been almost addicting to learn as it plays to the logical side of my brain, whilst reminding me of high school algebra (my favorite subject). Although fun to learn, I truly struggled graspings all the concepts, but now that I've moved on to Object Orientation -- boy does Procedural Ruby seem easy in comparison! I'm learning that coding is super difficult until you start learning an even more difficult concept, and then all of a sudden the past concepts seem so simple and they magically click. Hindsight is 20/20, right?
 
 In Procedural Ruby, we learned about **Booleans**. They may sound scary (cheesy, I know), but I promise you they are not! Everything in ruby is either truthy or falsely, and booleans are true or false data types. The only type of data that is falsey is false and nil.  Everything else is truthy, including "false" and "nil" because these are now data strings.
@@ -39,7 +37,7 @@ Let's look at a few examples and see whether they evaluate to true or false:
 
 `"UCLA" != "UCLA" `
 
-*This will evaluate to **false** since "UCLA" does equal "UCLA" and the bang (!) in front of the equal sign indicates the opposite logic of NOT.
+*This will evaluate to false since "UCLA" does equal "UCLA" and the bang (!) in front of the equal sign indicates the opposite logic of NOT.*
 
 
 `" " && ("California" != "New Hampshire")`
@@ -62,7 +60,7 @@ Let's look at a few examples and see whether they evaluate to true or false:
 *This will evaluate to **true**. 55 is greater than 10 so this is true. The right side is false since the bang reverses the logic. However, we only need one side of the operator to be true to return true since this is an OR statement.   *
 
 
-
+![](https://media.giphy.com/media/atejfh29pJPtC/giphy.gif)
 
 
 In addition to booleans, here's a (super) quick & basic summary about what I've learned in Procedural Ruby so far:
@@ -87,7 +85,7 @@ A method defines something that our program will be able to do. A method has a m
 ```
 def blog_greeting  #Method Signature
 
-puts "Welcome to my blog!"  #Method Body
+   puts "Welcome to my blog!"  #Method Body
 
 end  #Method closing
 ```
@@ -146,7 +144,7 @@ or I could make a loop:
 
 ```
 27.times do
-puts "Flatiron Rocks"
+   puts "Flatiron Rocks"
 end
 ```
 
@@ -171,7 +169,7 @@ or
 
 ```
 tech_company.each do |company|
-puts "puts "I love #{company}!"
+   puts "puts "I love #{company}!"
 end
 ```
 
