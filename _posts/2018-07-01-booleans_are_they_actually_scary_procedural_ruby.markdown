@@ -32,31 +32,31 @@ Since this represents NOT, the bang will do the opposite. For example "!=" this 
 
 Let's look at a few examples and see whether they evaluate to true or false:
 
-`**"The Cat Code" == "The Cat Code"**`
+`"The Cat Code" == "The Cat Code"`
 
 *This will evaluate to **true** since these strings are equal to each other.*
 
 
-`**"UCLA" != "UCLA" **`
+`"UCLA" != "UCLA" `
 
 *This will evaluate to **false** since "UCLA" does equal "UCLA" and the bang (!) in front of the equal sign indicates the opposite logic.
 
-`**" " && ("California" != "New Hampshire")**`
+`" " && ("California" != "New Hampshire")`
 
 *This evaluates to **true** since the string " " is true AND the statement that California does NOT equal NH is also true. And since they are both true on either side of the operator, this statement is true.*
 
 
-`**false && "false"**`
+`false && "false"`
 
 *This evaluates to **false** since false on the left evaluates to false, but "false" evaluates to true. Since they BOTH have to be true in order for this to return true, it will return false since only one side of the operator is true.*
 
 
-`**!nil**`
+`!nil`
 
 *This is **true**. Nil is false, but the bang operator changes the logic, so instead of false, it becomes true.*
 
 
-`**55 > 10 || !("Catherine is going to be a great coder!" && [9,3,5,12])**`
+`55 > 10 || !("Catherine is going to be a great coder!" && [9,3,5,12])`
 
 *This will evaluate to **true**. 55 is greater than 10 so this is true. The right side is false since the bang reverses the logic. However, we only need one side of the operator to be true to return true since this is an OR statement.   *
 
@@ -84,11 +84,11 @@ A variable helps us define and store data/information. If a variable is defined,
 A method defines something that our program will be able to do. A method has a method signature, a method body and a method closing.
 
 ```
-def blog_greeting *#Method Signature*
+def blog_greeting  #Method Signature
 
-puts "Welcome to my blog!" *#Method Body*
+puts "Welcome to my blog!"  #Method Body
 
-end *#Method closing*
+end  #Method closing
 ```
 
 **- Arrays**
