@@ -39,7 +39,8 @@ Let's look at a few examples and see whether they evaluate to true or false:
 
 `"UCLA" != "UCLA" `
 
-*This will evaluate to **false** since "UCLA" does equal "UCLA" and the bang (!) in front of the equal sign indicates the opposite logic.
+*This will evaluate to **false** since "UCLA" does equal "UCLA" and the bang (!) in front of the equal sign indicates the opposite logic of NOT.
+
 
 `" " && ("California" != "New Hampshire")`
 
