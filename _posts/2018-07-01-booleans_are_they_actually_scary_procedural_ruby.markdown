@@ -1,10 +1,12 @@
 ---
 layout: post
 title:      "BOOleans...are they actually scary? (Procedural Ruby)"
-date:       2018-07-02 03:29:02 +0000
+date:       2018-07-01 23:29:02 -0400
 permalink:  booleans_are_they_actually_scary_procedural_ruby
 ---
 
+
+[https://media.giphy.com/media/atejfh29pJPtC/giphy.gif]
 
 Procedural Ruby has been almost addicting to learn as it plays to the logical side of my brain, whilst reminding me of high school algebra (my favorite subject). Although fun to learn, I truly struggled graspings all the concepts, but now that I've moved on to Object Orientation -- boy does Procedural Ruby seem easy in comparison! I'm learning that coding is super difficult until you start learning an even more difficult concept, and then all of a sudden the past concepts seem so simple and they magically click. Hindsight is 20/20, right?
 
