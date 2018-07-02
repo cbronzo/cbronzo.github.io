@@ -57,7 +57,7 @@ Let's look at a few examples and see whether they evaluate to true or false:
 
 `55 > 10 || !("Catherine is going to be a great coder!" && [9,3,5,12])`
 
-*This will evaluate to **true**. 55 is greater than 10 so this is true. The right side is false since the bang reverses the logic. However, we only need one side of the operator to be true to return true since this is an OR statement.   *
+*This will evaluate to true. 55 is greater than 10 so this is true. The right side is false since the bang reverses the logic. However, we only need one side of the operator to be true to return true since this is an OR statement. *
 
 
 ![](https://media.giphy.com/media/atejfh29pJPtC/giphy.gif)
