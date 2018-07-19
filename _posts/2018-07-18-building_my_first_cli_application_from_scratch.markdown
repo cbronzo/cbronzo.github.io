@@ -5,7 +5,7 @@ date:       2018-07-18 20:40:27 -0400
 permalink:  building_my_first_cli_application_from_scratch
 ---
 
-This week, I built my own custom Command Line Interface (CLI) Application that pulled data from an external website and I coded it with Ruby by using Object Orientation! I felt very fairly confident and was thinking I could finish it in just a few hours -- but  I grossly underestimaed how long it would take me for my first time! I even created a local repository when I didn't need to...apparentley we haven't been taught that just yet. No wonder it took me so long....
+This week, I built my own custom Command Line Interface (CLI) Application that pulled data from an external website and I coded it with Ruby by using Object Orientation! I felt very fairly confident and was thinking I could finish it in just a few hours -- but  I grossly underestimated how long it would take me for my first time! I even created a local repository when I didn't need to...apparentley we haven't been taught that just yet. No wonder it took me so long....
 
 
 The building of it wasn't necessarily the hard part, the de-bugging was! I would fix one thing, and it would break another....or I would get so close to completion and then realize I need to refactor an entire set of code, and by doing that it would affect other related pieces. Sometimes I was missing something as simple as a comma and would spend forever grooming through lines of code, only for it to be such a simple fix. Haha, I learned so much by building this CLI but mostly I learned about the actual process of coding, and how much more of a mental game it truly is.
@@ -52,7 +52,7 @@ To exit, type 'exit'.
 21. Bourbon Steak Orange County
 ```
 
-They then have the option to select a resturant by number, or exit. And if they type an invalid response here, or anywhere in the CLI, they will get an error message to try again.
+They then have the option to select a restaurant by number, or exit. And if they type an invalid response here, or anywhere in the CLI, they will get an error message to try again.
 
 Say, a user enters '15' for Pizzeria Sapori (which I can see from my apartment - woohoo), this is what they would see:
 
@@ -66,7 +66,7 @@ To select another restaurant, please enter its number, or enter 'back' to go bac
 To exit, type 'exit'.
 ```
 
-Some of the resturant details were not listed in the Eater LA article, so in that case, I had to make a conditional where if nothing was provided, it would put "Sorry, no __  available."
+Some of the restaurant details were not listed in the Eater LA article, so in that case, I had to make a conditional where if nothing was provided, it would put "Sorry, no __  available."
 
 From here, they can just keep entering numbers to see other restaurants' info or they can hit 'back' or 'exit.' 
 
@@ -74,7 +74,7 @@ It may seem simple, and rudimentary but a lot of logic (and time) went into crea
 
 **The Code:**
 
-Without getting into all the specifics, the main files I had to code were my Scraper, CLI & Restaurant files. Of course I had other files that created my enviornment, or executed my CLI and so on...but the meat of the project was in the those three files.
+Without getting into all the specifics, the main files I had to code were my Scraper, CLI & Restaurant files. Of course, I had other files that created my environment, or executed my CLI and so on...but the meat of the project was in the other three files.
 
 I started off with my Scraper file by creating a Scraper Class. I then started the long journey of learning how to scrape from Eater LA's site and extract *only* the data I needed. The end result of the code looks like this:
 
@@ -108,7 +108,7 @@ end
 
 I used Nokogiri for the first time, which is a gem for web scraping, and then I iterated over "section.c-mapstack__card" since it contained all of the elements I needed. I created a hash to hold the data that would be scraped for each of the restaurant's attributes. This hash was then shoveled into an array, which would be passed into another method (Best_Restuarant.create_from_collection(array)) that I created in the Restaurant file.
 
-In the Restaurant file, I used my object orientation knowledge to code the following. I created getters and setters by using attr_accessor, and then I made a class variable of @@all save the restaurant objects. For every new instance of a restaurant it would initialize a hash, which was created by using mass assignment. Then I used four class methods using 'self' to refer to the Best_Restaurant class. The last method 'def self.create_from_collection(array)' uses all the logic from the other class methods. It iterates over the array and does this for each element: self.new(hash), save and self.create(hash). The code in here looks the simplest, but it's actually the most abstract. I find object orientation to be a bit confusing, but this project helped drive that knoweledge home.
+In the Restaurant file, I used my object orientation knowledge to code the following. I created getters and setters by using attr_accessor, and then I made a class variable of @@all save the restaurant objects. For every new instance of a restaurant, it would initialize a hash, which was created by using mass assignment. Then I used four class methods using 'self' to refer to the Best_Restaurant class. The last method 'def self.create_from_collection(array)' uses all the logic from the other class methods. It iterates over the array and does this for each element: self.new(hash), save and self.create(hash). The code in here looks the simplest, but it's actually the most abstract. I find object orientation to be a bit confusing, but this project helped drive that knowledge home.
 
 ```
 class Best_Restaurant
@@ -145,7 +145,7 @@ end
 ```
 
 
-Finally, I worked on my CLI class which heavily relied on the code in the other two files. For the most part, it  recieves data from the other classes and then uses lots of conditionals for potential inputs from the user. The meat of this code is actually strings of plain english that the user will see.
+Finally, I worked on my CLI class which heavily relied on the code in the other two files. For the most part, it recieves data from the other classes and then uses lots of conditionals for potential inputs from the user. The meat of this code is actually strings of plain english that the user will see.
 
 Here's what it looks like:
 
