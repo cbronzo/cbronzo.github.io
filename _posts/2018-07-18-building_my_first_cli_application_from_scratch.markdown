@@ -108,7 +108,7 @@ end
 
 I used Nokogiri for the first time, which is a gem for web scraping, and then I iterated over "section.c-mapstack__card" since it contained all of the elements I needed. I created a hash to hold the data that would be scraped for each of the restaurant's attributes. This hash was then shoveled into an array, which would be passed into another method (Best_Restuarant.create_from_collection(array)) that I created in the Restaurant file.
 
-In the Restaurant file, I used my object orientation knowledge to code this:
+In the Restaurant file, I used my object orientation knowledge to code the following. I created getters and setters by using attr_accessor, and then I made a class variable of @@all save the restaurant objects. For every new instance of a restaurant it would initialize a hash, which was created by using mass assignment. Then I used four class methods using 'self' to refer to the Best_Restaurant class. The last method 'def self.create_from_collection(array)' uses all the logic from the other class methods. It iterates over the array and does this for each element: self.new(hash), save and self.create(hash). The code in here looks the simplest, but it's actually the most abstract. I find object orientation to be a bit confusing, but this project helped drive that knoweledge home.
 
 ```
 class Best_Restaurant
@@ -145,7 +145,9 @@ end
 ```
 
 
-Finally, I worked on my CLI class which heavily relied on the code in the other two files. Here's what it looks like:
+Finally, I worked on my CLI class which heavily relied on the code in the other two files. For the most part, it  recieves data from the other classes and then uses lots of conditionals for potential inputs from the user. The meat of this code is actually strings of plain english that the user will see.
+
+Here's what it looks like:
 
 ```
 class CLI
