@@ -41,7 +41,7 @@ end
 
 In the controller, I had an application controller that had a few helper methods, but the main two controllers were my States Controller and my User Controller. Here, the controllers contain most of the logic -- telling the application what to do with the information given. For example, if a user inputs login information, it will first verify that the login is valid and then it will tell the application which route to go to in order to show a user's profile page. If a user adds a state, it will tell the database to store the record and send the updated data to the states view page. 
 
-Piece of States Controller
+Snippet of States Controller:
 
 ```
 class StatesController < ApplicationController
