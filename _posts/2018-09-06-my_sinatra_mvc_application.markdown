@@ -8,7 +8,7 @@ permalink:  my_sinatra_mvc_application
 The past few weeks (yes, weeks!) I have been working on my second portfolio project using Sinatra, the MVC model, CRUD (create, read, update, delete) & active record. I created an application that allows users to track the number of states they have traveled to in the US. This was the first application I have made where a database stores information that a user inputs -- such as their login information, their user id, the states they have been to and even their favorite memory of that state. Not only does the database store the information, but the information captured can be updated/edited, and deleted. There also had to be user authentication and validation and for logins. A lot of working parts had to come together to make this possible!
 
 ![State Tracker Home Page](https://i.imgur.com/0ysjqZZ.png)
-![Example State Page](https://i.imgur.com/M7ThcQY.png)
+
 
 While building this, each piece of my code related to another piece of my code -- which was definitely confusing at times, but all the more exciting when it all came together like a true jigsaw puzzle. The MVC architecture separated my logic into three separate parts: models, views & controllers. My models contained my classes `User`, `State` and `UserState`, and this is where I created the relationship of `has_many` since users can visit/have many states, and a state can have many users who have visited it. 
 
