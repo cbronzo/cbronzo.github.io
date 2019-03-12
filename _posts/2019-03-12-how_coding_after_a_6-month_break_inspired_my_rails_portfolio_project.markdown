@@ -195,8 +195,7 @@ Routes:
     end
   end
 	
-	```
-
+```
 
 I really enjoyed learning about how rails generates paths to use. I had to relearn a lot of this, but in doing so - I nailed it! I understand it way more than when I originally learned it.
 
