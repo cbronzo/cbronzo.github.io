@@ -25,7 +25,7 @@ What better way to jump back into coding than by making an application that I ac
 
 
 
-###### **To the application:**
+**The Application GOAL CHEER:**
 
 
 
@@ -165,6 +165,7 @@ end
 
 
 And the most basic but integral part of this project was setting up my routes. I used quite a bit of nested resources and went a level deeper than I should've, but in doing so, I learned so much. I truly was able to visualize how routes, resources and paths all related. 
+
 
 ```
 
