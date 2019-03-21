@@ -6,7 +6,7 @@ permalink:  activerecords_scandoulous_amount_of_relationships
 ---
 
 
-![Who Dis?!](https://imgur.com/a/CiN2zxD)
+![](https://giphy.com/gifs/mrw-girl-bar-3lgGnnTQFi05a)
 
 ActiveRecord is not loyal. *Sigh.....*
 
@@ -102,7 +102,7 @@ Posts/Show.html.erb
 
   ```
 <% if !@post.category.empty? %>
-  <h3><b><u>Category</u></b></h3>
+  Category
   <%= @post.category %><br><br>
 <% end %>
 	```
