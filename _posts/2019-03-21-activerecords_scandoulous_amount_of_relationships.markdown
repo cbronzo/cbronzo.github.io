@@ -6,7 +6,8 @@ permalink:  activerecords_scandoulous_amount_of_relationships
 ---
 
 
-![](https://giphy.com/gifs/mrw-girl-bar-3lgGnnTQFi05a)
+<center><iframe src="https://giphy.com/embed/3lgGnnTQFi05a" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/mrw-girl-bar-3lgGnnTQFi05a"></a></p></center>
+
 
 ActiveRecord is not loyal. *Sigh.....*
 
