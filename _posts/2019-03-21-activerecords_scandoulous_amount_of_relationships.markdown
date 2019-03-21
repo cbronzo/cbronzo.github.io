@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "ActiveRecord's Scandoulous Amount of Relationships!"
+title:      "ActiveRecord's Scandalous Amount of Relationships!"
 date:       2019-03-21 01:05:56 -0400
 permalink:  activerecords_scandoulous_amount_of_relationships
 ---
